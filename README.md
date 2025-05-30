@@ -1,4 +1,4 @@
-# Meeting Notes Processor API
+# AI-Powered Meeting Minutes Extractor
 
 This is a simple Express.js backend API that processes meeting notes using Google’s Gemini generative AI model.  
 You can send meeting notes either as a `.txt` file upload or as raw text in the request body, and the API returns a JSON response with a summary, decisions, and action items.
@@ -13,11 +13,11 @@ You can send meeting notes either as a `.txt` file upload or as raw text in the 
 
 2. **Local Development**:
    - The server runs on `localhost:3000` by default
-   - Change the `PORT` in `.env` if needed
 
 3. **Security Warning**:
    - Never commit `.env` to version control!
    - Add `.env` to your `.gitignore`
+  
 
 ## 🚀 Setup Instructions
 
