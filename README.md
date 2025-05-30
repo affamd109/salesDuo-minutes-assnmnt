@@ -5,6 +5,20 @@ You can send meeting notes either as a `.txt` file upload or as raw text in the 
 
 ---
 
+## Before You Begin
+
+1. **Obtain a Gemini API Key** (free tier available):
+   - Visit [Google AI Studio](https://aistudio.google.com/)
+   - Create and copy your API key
+
+2. **Local Development**:
+   - The server runs on `localhost:3000` by default
+   - Change the `PORT` in `.env` if needed
+
+3. **Security Warning**:
+   - Never commit `.env` to version control!
+   - Add `.env` to your `.gitignore`
+
 ## 🚀 Setup Instructions
 
 1. **Clone the repo or unzip the folder**  
