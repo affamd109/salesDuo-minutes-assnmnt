@@ -58,6 +58,8 @@ npm run dev
   - Value: upload your `.txt` file
 - Hit **Send**
 
+
+
 #### 🔹 Option B: Raw Text Input
 
 - Set method to `POST`
@@ -84,6 +86,47 @@ curl -X POST http://localhost:3000/process-meeting \
   -H "Content-Type: text/plain" \
   --data "Your meetings points go here"
 ```
+---
 
+### Example of sample output
 
+#### Sample input : 
 
+```bash
+Sprint Meeting – May 28
+
+- Finalize sprint backlog by June 1.  
+- Raj will update the API documentation by June 2.  
+- QA team to review and complete test cases by June 3.  
+- The team agreed to adopt new coding standards starting next sprint.  
+- No blockers or major issues reported this week.
+
+```
+
+#### Output:
+
+```json
+{
+    "summary": "The sprint meeting on May 28th covered sprint backlog finalization, API documentation updates, QA test case completion, and the adoption of new coding standards in the next sprint.  No significant roadblocks were reported.",
+    "decisions": [
+        "Adopt new coding standards starting next sprint."
+    ],
+    "actionItems": [
+        {
+            "task": "Finalize sprint backlog",
+            "owner": null,
+            "due": "June 1"
+        },
+        {
+            "task": "Update API documentation",
+            "owner": "Raj",
+            "due": "June 2"
+        },
+        {
+            "task": "Review and complete test cases",
+            "owner": "QA team",
+            "due": "June 3"
+        }
+    ]
+}
+```
