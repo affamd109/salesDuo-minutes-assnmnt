@@ -21,7 +21,7 @@ You can send meeting notes either as a `.txt` file upload or as raw text in the 
 
 ## 🚀 Setup Instructions
 
-1. **Clone the repo  by writing these commands in  your terminal**  
+1. **Clone the repository and navigate into the project directory:**  
    ```bash
    git clone https://github.com/affamd109/salesDuo-minutes-assnmnt.git
    cd salesDuo-minutes-assnmnt
@@ -32,8 +32,9 @@ You can send meeting notes either as a `.txt` file upload or as raw text in the 
 npm install
 
 ```
+3.**Open the project in VS Code (or any code editor)**
 
-3.**Create a new .env file in the root directory and add:**
+4.**Create a new .env file in the root directory and add:**
    ```bash
    GEMINI_API_KEY=your_google_gemini_api_key_here
    ```
