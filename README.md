@@ -88,7 +88,7 @@ curl -X POST http://localhost:3000/process-meeting \
 ```
 ---
 
-### Example of sample output
+### 📌 Example of sample output using either postman or curl
 
 #### Sample input : 
 
