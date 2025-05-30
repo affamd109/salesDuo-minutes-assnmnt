@@ -21,7 +21,7 @@ You can send meeting notes either as a `.txt` file upload or as raw text in the 
 
 ## 🚀 Setup Instructions
 
-1. **Clone the repo or unzip the folder**  
+1. **Clone the repo in your terminal**  
    ```bash
    git clone https://github.com/affamd109/salesDuo-minutes-assnmnt.git
    cd salesDuo-minutes-assnmnt
@@ -47,7 +47,7 @@ npm run dev
 
 ---
 
-### 📌 1. Testing with Postman
+### 📌 1. Testing with Postman (Postman link : https://www.postman.com/)
 
 #### 🔹 Option A: Upload `.txt` File
 
