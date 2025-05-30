@@ -80,7 +80,8 @@ npm run dev
 ```bash
 curl -X POST http://localhost:3000/process-meeting \
   -H "Content-Type: multipart/form-data" \
-  -F "file=@sample1.txt"
+  -F "file=@uploads/sample1.txt"
+  
 ```
 #### 🔹 Option B: Raw Text Input
 ```bash
