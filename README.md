@@ -45,6 +45,7 @@ To start the development server:
 ```bash
 npm run dev
 ```
+"Server running on 3000" will be printed out on your terminal after starting the server.
 
 ---
 
