@@ -21,7 +21,7 @@ You can send meeting notes either as a `.txt` file upload or as raw text in the 
 
 ## 🚀 Setup Instructions
 
-1. **Clone the repo in by writing these commands in  your terminal**  
+1. **Clone the repo  by writing these commands in  your terminal**  
    ```bash
    git clone https://github.com/affamd109/salesDuo-minutes-assnmnt.git
    cd salesDuo-minutes-assnmnt
