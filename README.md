@@ -23,7 +23,7 @@ You can send meeting notes either as a `.txt` file upload or as raw text in the 
 
 1. **Clone the repo or unzip the folder**  
    ```bash
-   git clone "https://github.com/affamd109/salesDuo-minutes-assnmnt/tree/main"
+   git clone https://github.com/affamd109/salesDuo-minutes-assnmnt.git
    cd <project-folder>
    ```
 2. **Install dependencies** 
