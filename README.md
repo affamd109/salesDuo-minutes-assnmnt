@@ -1,6 +1,6 @@
 # AI-Powered Meeting Minutes Extractor
 
-This is a simple Express.js backend API that processes meeting notes using Google’s Gemini generative AI model.  
+This is a Node.js+ Express.js backend API that processes meeting notes using Google’s Gemini generative AI model.  
 You can send meeting notes either as a `.txt` file upload or as raw text in the request body, and the API returns a JSON response with a summary, decisions, and action items.
 
 ---
@@ -25,10 +25,65 @@ You can send meeting notes either as a `.txt` file upload or as raw text in the 
    ```bash
    git clone <https://github.com/affamd109/salesDuo-minutes-assnmnt/tree/main>
    cd <project-folder>
-``
 
-   # Install dependencies
+2. **Install dependencies** 
 
 ```bash
 npm install
+
+```
+
+3.**Create a new .env file in the root directory and add:**
+   ```bash
+   GEMINI_API_KEY=your_google_gemini_api_key_here
+   ```
+
+##  Running the server
+To start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+### 📌 1. Testing with Postman
+
+#### 🔹 Option A: Upload `.txt` File
+
+- Set method to `POST`
+- Set URL: `http://localhost:3000/process-meeting`
+- Go to **Body** → **form-data**
+  - Key: `file` (type: File)
+  - Value: upload your `.txt` file
+- Hit **Send**
+
+#### 🔹 Option B: Raw Text Input
+
+- Set method to `POST`
+- Set URL: `http://localhost:3000/process-meeting`
+- Go to **Body** → **raw**
+- Select **Text** (from dropdown)
+- Paste your meeting notes in plain text
+- Hit **Send**
+
+---
+
+### 🧪 2. Testing with cURL
+
+#### 🔹 Option A: Upload `.txt` File
+
+```bash
+curl -X POST http://localhost:3000/process-meeting \
+  -H "Content-Type: multipart/form-data" \
+  -F "file=@sample1.txt"
+```
+#### 🔹 Option B: Raw Text Input
+```bash
+curl -X POST http://localhost:3000/process-meeting \
+  -H "Content-Type: text/plain" \
+  --data "Your meetings points go here"
+```
+
+
 
