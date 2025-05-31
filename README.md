@@ -1,9 +1,30 @@
 # AI-Powered Meeting Minutes Extractor
 
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)
+![Express.js](https://img.shields.io/badge/Express.js-Backend-lightgrey?logo=express)
+![React](https://img.shields.io/badge/Frontend-React-61dafb?logo=react)
+![Gemini API](https://img.shields.io/badge/Google%20Gemini-API-blueviolet?logo=google)
+[![Deploy Backend on Render](https://img.shields.io/badge/Backend-Render-blue?logo=render)](https://render.com)
+[![Deploy Frontend on Render](https://img.shields.io/badge/Frontend-Render-blue?logo=render)](https://render.com)
+
+
 This is a Node.js+ Express.js backend API that processes meeting notes using Google’s Gemini generative AI model.  
 You can send meeting notes either as a `.txt` file upload or as raw text in the request body, and the API returns a JSON response with a summary, decisions, and action items.
 
 ---
+
+## ✨ Features
+
+- 🔍 Accepts both raw text input and `.txt` file uploads
+- 🧠 Uses Google Gemini API to extract:
+  - ✅ Summary of the meeting
+  - 📌 Key decisions made
+  - 📋 Action items assigned
+- ⚡ Fast and lightweight Node.js + Express.js backend
+- 🛡️ Secure environment variable support using `.env`
+- 🔄 Frontend made by  React.
+- 🧪 Built-in error handling for common input and API failures
+
 
 ## Before You Begin
 
@@ -26,9 +47,10 @@ You can send meeting notes either as a `.txt` file upload or as raw text in the 
    git clone https://github.com/affamd109/salesDuo-minutes-assnmnt.git
    cd salesDuo-minutes-assnmnt
    ```
-2. **Install dependencies** 
+2. **Install baackend dependencies** 
 
 ```bash
+cd backend
 npm install
 
 ```
@@ -39,13 +61,32 @@ npm install
    GEMINI_API_KEY=your_google_gemini_api_key_here
    ```
 
-##  Running the server
-To start the development server:
+5. **Install frontend dependencies** 
 
 ```bash
+cd frontend
+npm install
+
+```
+
+##  🖥️ Running the App Locally
+✅ Start the backend server
+
+```bash
+cd backend
 npm run dev
 ```
 "Server running on 3000" will be printed out on your terminal after starting the server.
+
+✅ Start the frontend server (Open a new terminal):
+
+```bash
+cd frontend
+npm run dev
+
+```
+
+
 
 ---
 
