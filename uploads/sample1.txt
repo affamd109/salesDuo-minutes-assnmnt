@@ -1,7 +1,5 @@
-Project Update – May 28
+We’ve decided to kick off the customer feedback integration project starting July 5, aiming to finish by July 25. Ankit will begin by compiling feedback from the last two quarters and should have a summary report ready by July 8. Tanya is responsible for updating the product roadmap based on that report and will try to finalize it by July 12. Meanwhile, Rohan will coordinate with the design team to ensure the proposed UI changes align with the new feature requests.
 
-- The final draft of the marketing plan will be ready by June 3.  
-- Anil will coordinate with the design team to update the brand assets.  
-- Customer support team reported an increase in ticket volume last week.  
-- Decision made to extend the beta testing phase by two weeks.  
-- Action item: Lisa to schedule training sessions for new hires by June 7.
+The team also agreed to conduct a mid-project review on July 15 to track progress and catch any blockers early. In addition, Priya suggested adding a quick survey on the dashboard to gather real-time feedback from users, which everyone supported.
+
+We also discussed shifting to hybrid standups twice a week to better accommodate remote teammates starting next sprint.
