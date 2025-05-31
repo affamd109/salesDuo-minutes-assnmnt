@@ -11,6 +11,9 @@
 This is a Node.js+ Express.js backend API that processes meeting notes using Google’s Gemini generative AI model.  
 You can send meeting notes either as a `.txt` file upload or as raw text in the request body, and the API returns a JSON response with a summary, decisions, and action items.
 
+### 🔗 Live Website  
+👉 [mins-of-meetings-frontend.onrender.com](https://mins-of-meetings-frontend.onrender.com)
+
 ---
 
 ## ✨ Features
