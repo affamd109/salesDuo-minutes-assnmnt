@@ -31,28 +31,41 @@ app.get('/', (req, res) => {
   res.send("Backend working");
 });
 
-app.post('/process-meeting', upload.single('file'), async (req, res) => {
+// for .txt file upload
+app.post('/process-meeting-file', upload.single('file'), async (req, res) => {
+  try {
+    const content = await fsPromises.readFile(req.file.path, 'utf-8');
+    await fsPromises.unlink(req.file.path);
+
+    const result = await processMeetingNotes(content);
+    res.json(result);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: err.message || 'Error processing file' });
+  }
+});
+
+// for pasted/plain text
+app.post('/process-meeting-text', async (req, res) => {
   try {
     let content = '';
 
-    if (req.file) {
-      content = await fsPromises.readFile(req.file.path, 'utf-8');
-      await fsPromises.unlink(req.file.path);
-    } else if (req.is('application/json') && req.body.text) {
+    if (req.is('application/json') && req.body.text) {
       content = req.body.text;
     } else if (req.is('text/plain')) {
       content = req.body;
     } else {
-      return res.status(400).json({ error: 'No valid input provided or the input is missing' });
+      return res.status(400).json({ error: 'No valid input provided' });
     }
 
     const result = await processMeetingNotes(content);
     res.json(result);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: err.message || 'Something went wrong at the server side' });
+    res.status(500).json({ error: err.message || 'Error processing text' });
   }
 });
+
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
