@@ -9,9 +9,10 @@ const processMeetingNotes = require('./geminiService');
 dotenv.config();
 
 
-//this allows me to only upload .txt file
+//this allows me to only upload .txt file and limits upload to 2mb
 const upload = multer({
   dest: 'uploads/',
+  limits: { fileSize: 2 * 1024 * 1024 },  //only for 2mb
   fileFilter: (req, file, cb) => {
     if (file.mimetype === 'text/plain') {
       cb(null, true);
