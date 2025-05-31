@@ -175,3 +175,27 @@ Sprint Meeting – May 28
     ]
 }
 ```
+
+
+## 🛠️ Tech Stack
+
+### 🧩 Frontend
+- React.js (with Vite)
+- Tailwind CSS
+- Axios
+
+### 🔧 Backend
+- Node.js
+- Express.js
+- Google Gemini API (via REST)
+
+### 🌐 Full Stack
+- RESTful API architecture
+- JSON-based communication
+- File handling via `multipart/form-data`
+- Environment variables managed via `.env`
+
+### 🧪 Dev Tools
+- Render (for deployment)
+- VS Code (recommended editor)
+- Git & GitHub (version control)
