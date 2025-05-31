@@ -182,7 +182,6 @@ Sprint Meeting – May 28
 ### 🧩 Frontend
 - React.js (with Vite)
 - Tailwind CSS
-- Axios
 
 ### 🔧 Backend
 - Node.js
@@ -197,5 +196,5 @@ Sprint Meeting – May 28
 
 ### 🧪 Dev Tools
 - Render (for deployment)
-- VS Code (recommended editor)
+- VS Code 
 - Git & GitHub (version control)
