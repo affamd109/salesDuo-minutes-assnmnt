@@ -49,7 +49,7 @@ ${text}`;
     const response = await result.response;
     const rawText = await response.text();
 
-    // I am using jsonStart and jsonEnd because most of the time the genAI will return extra text around JSON ... so here i am just fininhg the start and end of JSON
+    // I am using jsonStart and jsonEnd because most of the time the genAI will return extra text around JSON ... so here i am just finding the start and end of JSON
     const jsonStart = rawText.indexOf('{');
     const jsonEnd = rawText.lastIndexOf('}');
     const jsonString = rawText.substring(jsonStart, jsonEnd + 1);
