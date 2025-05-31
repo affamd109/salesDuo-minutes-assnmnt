@@ -29,7 +29,7 @@ app.post('/process-meeting', upload.single('file'), async (req, res) => {
       fs.unlinkSync(req.file.path); // Cleanup of already read files
 
     } else if (req.is('application/json') && req.body.text) {
-      // case 2: JSON body like { "text": "..." }
+      // case 2: JSON body 
       content = req.body.text;
 
     } else if (req.is('text/plain')) {
