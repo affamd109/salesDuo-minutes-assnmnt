@@ -100,7 +100,7 @@ function App() {
             ))}
           </motion.div>
         </motion.div>
-      ) : (
+      ) : (  //Here showhero is false so this will be rendered now :
         <div className="min-h-screen flex flex-col items-center px-4 py-10 bg-gradient-to-br from-[#0f0f0f] to-[#1a0b2e]">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
