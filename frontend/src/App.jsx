@@ -141,6 +141,8 @@ function App() {
               </motion.div>
             )}
 
+            {/* Result component  */}
+
             {result && <ResultBox result={result} />}
           </motion.div>
         </div>
