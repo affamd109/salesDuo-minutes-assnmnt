@@ -45,8 +45,8 @@ function MinutesForm({ onResult, onError, setLoading, loading }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full max-w-xl bg-[#0f0f0f] border border-purple-800 p-6 rounded-xl shadow-lg"
-    >
+      className="w-full max-w-xl bg-[#0f0f0f] border border-purple-800 p-6 rounded-xl shadow-lg" >
+
       {/* Textarea */}
       <div>
         <label className="text-lg font-semibold bg-gradient-to-r from-purple-400 to-fuchsia-500 bg-clip-text text-transparent">
@@ -58,8 +58,7 @@ function MinutesForm({ onResult, onError, setLoading, loading }) {
           rows="8"
           disabled={file !== null}
           required={!file}
-          className="w-full mt-2 p-3 bg-[#1a1a1a] text-white border border-purple-800 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600 transition"
-        />
+          className="w-full mt-2 p-3 bg-[#1a1a1a] text-white border border-purple-800 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600 transition"  />
       </div>
 
       {/* File Upload */}
@@ -71,14 +70,13 @@ function MinutesForm({ onResult, onError, setLoading, loading }) {
           type="file"
           accept=".txt"
           onChange={(e) => setFile(e.target.files[0])}
-          className="text-white file:mr-4 file:px-4 file:py-1 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-purple-600 file:text-white hover:file:bg-purple-700 transition"
-        />
+          className="text-white file:mr-4 file:px-4 file:py-1 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-purple-600 file:text-white hover:file:bg-purple-700 transition" />
+
         {file && (
           <button
             type="button"
             onClick={() => setFile(null)}
-            className="mt-2 text-sm text-red-400 hover:underline"
-          >
+            className="mt-2 text-sm text-red-400 hover:underline"  >
             Remove file
           </button>
         )}
@@ -88,8 +86,7 @@ function MinutesForm({ onResult, onError, setLoading, loading }) {
       <button
         type="submit"
         disabled={loading}
-        className="mt-6 cursor-pointer  w-full bg-purple-700 hover:bg-purple-800 text-white font-medium py-2 px-4 rounded-md transition"
-      >
+        className="mt-6 cursor-pointer  w-full bg-purple-700 hover:bg-purple-800 text-white font-medium py-2 px-4 rounded-md transition" >
         {loading ? 'Processing...' : 'Submit'}
       </button>
     </form>
