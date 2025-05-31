@@ -20,8 +20,10 @@ function MinutesForm({ onResult, onError, setLoading, loading }) {
       let response;
 
       if (file) {
-        const formData = new FormData();
+        const formData = new FormData(); //I am using FormData cuz i need to send the file data in a special format which is multipart/form-data
         formData.append('file', file);
+        
+        //I will send a http post request using axios.post 
         response = await axios.post(`${API}/process-meeting`, formData, {
           headers: { 'Content-Type': 'multipart/form-data' },
         });
