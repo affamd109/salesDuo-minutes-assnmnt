@@ -1,2 +1,11 @@
-.env
+# global ignore
 node_modules/
+.env
+.DS_Store
+
+# frontend ignore
+frontend/node_modules
+frontend/dist
+
+# backend ignore
+backend/node_modules

@@ -16,6 +16,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors());
 
+app.get('/' , (req , res) =>{
+  res.send("Backend working")
+})
+
 
 
 app.post('/process-meeting', upload.single('file'), async (req, res) => {
