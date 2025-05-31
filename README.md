@@ -73,7 +73,7 @@ npm run dev
 
 ---
 
-### 🧪 2. Testing with cURL
+### 🧪 2. Testing with curl
 #### Run the following commands in your terminal 
 
 #### 🔹 Option A: Upload `.txt` File
