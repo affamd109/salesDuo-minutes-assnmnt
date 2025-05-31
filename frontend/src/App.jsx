@@ -93,9 +93,12 @@ function App() {
               </motion.div>
             ))}
           </motion.div>
+          
         </motion.div>
+
       ) : (  //Here showhero is false so this will be rendered now :
         <div className="min-h-screen flex flex-col items-center px-4 py-10 bg-gradient-to-br from-[#0f0f0f] to-[#1a0b2e]">
+
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -105,11 +108,13 @@ function App() {
               <h1 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#6366F1] via-[#8B5CF6] to-[#EC4899]">
                 Meeting Minutes Extractor
               </h1>
+              
               <button
                 onClick={() => setShowHero(true)}
                 className="text-gray-400 hover:text-white transition" >
                 ← Back
               </button>
+
             </div>
 
             <MinutesForm
