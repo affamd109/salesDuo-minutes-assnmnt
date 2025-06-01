@@ -64,7 +64,7 @@ npm install
    GEMINI_API_KEY=your_google_gemini_api_key_here
    ```
 
-5. **Install frontend dependencies** 
+5. **Change your directory back to root and run these commands to install frontend dependencies : ** 
 
 ```bash
 cd frontend
