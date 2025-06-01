@@ -59,7 +59,7 @@ npm install
 ```
 3.**Open the project in VS Code (or any code editor)**
 
-4.**Create a new .env file in the root directory and add:**
+4.**Create a new .env file in the backend directory and add:**
    ```bash
    GEMINI_API_KEY=your_google_gemini_api_key_here
    ```
