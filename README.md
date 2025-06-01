@@ -135,6 +135,15 @@ curl -X POST http://localhost:3000/process-meeting \
 ```
 ---
 
+### 📌 Sample Files :
+**Use the provided sample files, inside the uploads folder of backend folder :**
+
+• sample1.txt  
+• sample2.txt  
+• sample3.txt
+
+---
+
 ### 📌 Example of sample output using either postman or curl
 
 #### Sample input : 
