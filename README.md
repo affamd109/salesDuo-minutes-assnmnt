@@ -27,6 +27,7 @@ You can send meeting notes either as a `.txt` file upload or as raw text in the 
 - 🛡️ Secure environment variable support using `.env`
 - 🔄 Frontend made by  React.
 - 🧪 Built-in error handling for common input and API failures
+- Responsive design - Built for both laptops and mobiles.
 
 
 ## Before You Begin
