@@ -8,8 +8,8 @@
 [![Deploy Frontend on Render](https://img.shields.io/badge/Frontend-Render-blue?logo=render)](https://render.com)
 
 
-This is a Node.js+ Express.js backend API that processes meeting notes using Google’s Gemini generative AI model.  
-You can send meeting notes either as a `.txt` file upload or as raw text in the request body, and the API returns a JSON response with a summary, decisions, and action items.
+This is a full-stack Meeting Minutes Extractor built with Node.js + Express.js on the backend and a
+ React.js frontend. It uses Google’s Gemini generative AI to intelligently process meeting notes.
 
 ### 🔗 Live Website  
 👉 [mins-of-meetings-frontend.onrender.com](https://mins-of-meetings-frontend.onrender.com)
